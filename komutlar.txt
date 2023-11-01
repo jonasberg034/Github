@@ -1,0 +1,25 @@
+git clone https://github.com/clarusway/petclinic-microservices-with-db.git
+cd petclinic-microservices-with-db
+rm -rf .git
+
+git init
+git add .
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://[github username]:[your-token]@github.com/[your-git-account]/[your-repo-name-petclinic-microservices-with-db.git]
+git push origin main
+
+    git checkout main
+    git branch dev
+    git checkout dev
+    git push --set-upstream origin dev
+
+
+git add .
+git commit -m 'added packaging script'
+git push --set-upstream origin feature/msp-4
+git checkout dev
+git merge feature/msp-4
+git push origin dev
